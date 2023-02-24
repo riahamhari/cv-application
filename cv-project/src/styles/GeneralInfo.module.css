@@ -1,0 +1,17 @@
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1efef;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 35px;
+    margin: 0;
+}
+
+.profession {
+    letter-spacing: 1.5px;
+}

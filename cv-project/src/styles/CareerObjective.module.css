@@ -1,0 +1,20 @@
+.heading {
+    font-size: 2rem;
+}
+
+.paragraph {
+    font-size: 1.3rem;
+}
+
+.wrapper {
+
+    border-bottom: 1px solid #9b9494;
+}
+
+.container {
+    margin-left: 1rem;
+}
+
+.btn {
+    margin-bottom: 1rem;
+}

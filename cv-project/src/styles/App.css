@@ -1,0 +1,25 @@
+.App {
+    /* display: flex;
+    justify-content: center; */
+    margin: 0 auto;
+    width: 850px;
+    /* padding: 20px; */
+    background-color: white;
+}
+
+
+
+.main {
+    display: flex;
+}
+
+.left-column {
+    width: 30%;
+    border-right: 1px solid #9b9494;
+    /* padding: 1rem; */
+}
+
+.right-column {
+    width: 70%;
+    /* padding: 1rem; */
+}
