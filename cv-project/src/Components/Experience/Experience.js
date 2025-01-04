@@ -76,8 +76,14 @@ class Experience extends Component {
 
     }
 
+    handleCancel = () => {
+        this.setState({
+            editMode: false
+        })
+    }
+
     handleEdit = (e) => {
-        console.log(e.target)
+
         this.setState({
             editMode: true
         })
@@ -179,18 +185,22 @@ class Experience extends Component {
 
                         </label>
                         <button type="submit">Submit</button>
+                        <span>
+                            <button onClick={this.handleCancel}>Cancel</button>
+                        </span>
+
                     </form>
                 ) : (
                     <div>
                         {experience.map((exp) => {
                             return (
-                                <div>
+                                <div key={uniqid()}>
                                     <div className={classes.companyInfo}>
                                         <h3>{exp.jobTitle}</h3>
                                         <h3>{exp.date}</h3>
                                         <h3>{exp.companyName}<span> | {exp.companyLocation}</span></h3>
                                     </div>
-                                    <ul>
+                                    <ul className={classes.description}>
                                         <li key={uniqid()}>{exp.descriptionOne}</li>
                                         <li key={uniqid()}>{exp.descriptionTwo}</li>
                                         <li key={uniqid()}>{exp.descriptionThree}</li>
